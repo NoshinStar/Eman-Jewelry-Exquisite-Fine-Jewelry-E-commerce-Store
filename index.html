@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eman Jewelry - Premium handcrafted jewelry for timeless elegance">
+    <title>Eman Jewelry | Exquisite Fine Jewelry Collection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-modal">
+            <button class="close-btn" id="closeSearchBtn" aria-label="Close Search">
+                <i class='bx bx-x'></i>
+            </button>
+            <div class="search-content">
+                <h2 class="search-title">Search for Fine Jewelry</h2>
+                <div class="search-input-group">
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Search products, collections, or keywords..." id="searchInput">
+                </div>
+
+                <p class="category-prompt">Browse by Category:</p>
+                <div class="search-categories" id="searchCategories">
+                    <a href="#products" class="category-tag" data-category="rings">Rings</a>
+                    <a href="#products" class="category-tag" data-category="necklaces">Necklaces</a>
+                    <a href="#products" class="category-tag" data-category="earrings">Earrings</a>
+                    <a href="#products" class="category-tag" data-category="bracelets">Bracelets</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <i class='bx bx-diamond'></i>
+                <span>Eman Jewelry</span>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#collections" class="nav-link">Collections</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="search-btn" aria-label="Search">
+                    <i class='bx bx-search'></i>
+                </button>
+
+                <button class="cart-btn" aria-label="Shopping Cart">
+                    <i class='bx bx-cart'></i>
+                    <span class="cart-count">0</span>
+                </button>
+
+                <a href="login.html" class="btn btn-primary nav-btn">Log In</a>
+                <a href="signup.html" class="btn btn-primary nav-btn">Sign Up</a>
+
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <div class="hero-bg" style="background-image: url('/img/bg.jpg');">
+                </div>
+                <div class="hero-content">
+                    <div class="container">
+                        <span class="hero-subtitle" data-aos="fade-up">Timeless Elegance</span>
+                        <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                            Discover Your<br>Perfect Piece
+                        </h1>
+                        <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+                            Exquisite handcrafted jewelry for life's most precious moments
+                        </p>
+                        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
+                            <a href="#collections" class="btn btn-primary">Shop Collection</a>
+                            <a href="#about" class="btn btn-outline">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-slide">
+                <div class="hero-bg"
+                    style="background-image: url('https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1920&q=80')">
+                </div>
+                <div class="hero-content">
+                    <div class="container">
+                        <span class="hero-subtitle" data-aos="fade-up">Bridal Collection</span>
+                        <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                            Make Your Day<br>Unforgettable
+                        </h1>
+                        <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+                            Elegant wedding jewelry designed to sparkle on your special day
+                        </p>
+                        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
+                            <a href="#collections" class="btn btn-primary">Explore Bridal</a>
+                            <a href="#about" class="btn btn-outline">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-controls">
+            <button class="hero-prev" aria-label="Previous Slide"><i class='bx bx-chevron-left'></i></button>
+            <button class="hero-next" aria-label="Next Slide"><i class='bx bx-chevron-right'></i></button>
+        </div>
+
+        <div class="hero-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class='bx bx-shield-alt-2'></i>
+                    </div>
+                    <h3>Lifetime Warranty</h3>
+                    <p>Every piece comes with our comprehensive lifetime warranty</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class='bx bx-diamond'></i>
+                    </div>
+                    <h3>Certified Quality</h3>
+                    <p>GIA certified diamonds and precious gemstones</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class='bx bx-package'></i>
+                    </div>
+                    <h3>Free Shipping</h3>
+                    <p>Complimentary shipping on all orders worldwide</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class='bx bx-refresh'></i>
+                    </div>
+                    <h3>30-Day Returns</h3>
+                    <p>Hassle-free returns within 30 days of purchase</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections -->
+    <section class="collections" id="collections">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Browse Our Collections</h2>
+                <p class="section-subtitle">Curated selections for every style and occasion</p>
+            </div>
+
+            <div class="collections-grid">
+                <div class="collection-card">
+                    <div class="collection-image">
+                        <img src="/img/img1.jpg" alt="Engagement Rings">
+                        <div class="collection-overlay">
+                            <a href="#" class="btn btn-white">Explore Collection</a>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>Engagement Rings</h3>
+                        <span class="collection-count">85+ Designs</span>
+                    </div>
+                </div>
+
+                <div class="collection-card">
+                    <div class="collection-image">
+                        <img src="/img/img2.jpg" alt="Necklaces">
+                        <div class="collection-overlay">
+                            <a href="#" class="btn btn-white">Explore Collection</a>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>Necklaces</h3>
+                        <span class="collection-count">120+ Designs</span>
+                    </div>
+                </div>
+
+                <div class="collection-card">
+                    <div class="collection-image">
+                        <img src="/img/img3.jpg" alt="Earrings">
+                        <div class="collection-overlay">
+                            <a href="#" class="btn btn-white">Explore Collection</a>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>Earrings</h3>
+                        <span class="collection-count">95+ Designs</span>
+                    </div>
+                </div>
+
+                <div class="collection-card">
+                    <div class="collection-image">
+                        <img src="/img/img4.jpg" alt="Bracelets">
+                        <div class="collection-overlay">
+                            <a href="#" class="btn btn-white">Explore Collection</a>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>Bracelets</h3>
+                        <span class="collection-count">65+ Designs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Products</h2>
+                <p class="section-subtitle">Handpicked pieces from our latest collection</p>
+            </div>
+
+            <div class="product-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="rings">Rings</button>
+                <button class="filter-btn" data-filter="necklaces">Necklaces</button>
+                <button class="filter-btn" data-filter="earrings">Earrings</button>
+                <button class="filter-btn" data-filter="bracelets">Bracelets</button>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card" data-category="rings">
+                    <div class="product-image">
+                        <img src="/img/img1.jpg" alt="Diamond Solitaire Ring">
+                        <span class="product-badge">New</span>
+                        <div class="product-actions">
+                            <button class="action-btn wishlist-btn" aria-label="Add to Wishlist">
+                                <i class='bx bx-heart'></i>
+                            </button>
+                            <button class="action-btn quickview-btn" aria-label="Quick View">
+                                <i class='bx bx-show'></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Engagement Rings</span>
+                        <h3 class="product-title">Diamond Solitaire Ring</h3>
+                        <div class="product-rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <span>(127)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$2,499</span>
+                            <span class="price-original">$2,999</span>
+                        </div>
+                        <button class="btn btn-primary btn-block add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="necklaces">
+                    <div class="product-image">
+                        <img src="/img/img2.jpg" alt="Gold Necklace">
+                        <span class="product-badge sale">Sale</span>
+                        <div class="product-actions">
+                            <button class="action-btn wishlist-btn" aria-label="Add to Wishlist">
+                                <i class='bx bx-heart'></i>
+                            </button>
+                            <button class="action-btn quickview-btn" aria-label="Quick View">
+                                <i class='bx bx-show'></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Silver Collection</span>
+                        <h3 class="product-title">18K Silver Necklace</h3>
+                        <div class="product-rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                            <span>(89)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$1,799</span>
+                            <span class="price-original">$2,199</span>
+                        </div>
+                        <button class="btn btn-primary btn-block add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="earrings">
+                    <div class="product-image">
+                        <img src="/img/img3.jpg" alt="Pearl Earrings">
+                        <div class="product-actions">
+                            <button class="action-btn wishlist-btn" aria-label="Add to Wishlist">
+                                <i class='bx bx-heart'></i>
+                            </button>
+                            <button class="action-btn quickview-btn" aria-label="Quick View">
+                                <i class='bx bx-show'></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Pearl Collection</span>
+                        <h3 class="product-title">Classic Pearl Drop Earrings</h3>
+                        <div class="product-rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <span>(203)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$899</span>
+                        </div>
+                        <button class="btn btn-primary btn-block add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="rings">
+                    <div class="product-image">
+                        <img src="/img/img5.jpg" alt="Emerald Ring">
+                        <span class="product-badge">Exclusive</span>
+                        <div class="product-actions">
+                            <button class="action-btn wishlist-btn" aria-label="Add to Wishlist">
+                                <i class='bx bx-heart'></i>
+                            </button>
+                            <button class="action-btn quickview-btn" aria-label="Quick View">
+                                <i class='bx bx-show'></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Precious Stones</span>
+                        <h3 class="product-title">Emerald Engagement Ring</h3>
+                        <div class="product-rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <span>(156)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$3,299</span>
+                        </div>
+                        <button class="btn btn-primary btn-block add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bracelets">
+                    <div class="product-image">
+                        <img src="/img/img4.jpg" alt="Tennis Bracelet">
+                        <div class="product-actions">
+                            <button class="action-btn wishlist-btn" aria-label="Add to Wishlist">
+                                <i class='bx bx-heart'></i>
+                            </button>
+                            <button class="action-btn quickview-btn" aria-label="Quick View">
+                                <i class='bx bx-show'></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Diamond Collection</span>
+                        <h3 class="product-title">Diamond Tennis Bracelet</h3>
+                        <div class="product-rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                            <span>(142)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$2,899</span>
+                        </div>
+                        <button class="btn btn-primary btn-block add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="necklaces">
+                    <div class="product-image">
+                        <img src="/img/img6.jpg" alt="Sapphire Necklace">
+                        <span class="product-badge sale">Sale</span>
+                        <div class="product-actions">
+                            <button class="action-btn wishlist-btn" aria-label="Add to Wishlist">
+                                <i class='bx bx-heart'></i>
+                            </button>
+                            <button class="action-btn quickview-btn" aria-label="Quick View">
+                                <i class='bx bx-show'></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Precious Stones</span>
+                        <h3 class="product-title">Sapphire Pendant Necklace</h3>
+                        <div class="product-rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <span>(178)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$2,199</span>
+                            <span class="price-original">$2,599</span>
+                        </div>
+                        <button class="btn btn-primary btn-block add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="rings">
+                    <div class="product-image">
+                        <img src="/img/img9.jpg" alt="Two-Tone Wedding Band">
+                        <span class="product-badge">Best Seller</span>
+                        <div class="product-actions">
+                            <button class="action-btn wishlist-btn" aria-label="Add to Wishlist">
+                                <i class='bx bx-heart'></i>
+                            </button>
+                            <button class="action-btn quickview-btn" aria-label="Quick View">
+                                <i class='bx bx-show'></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Wedding Bands</span>
+                        <h3 class="product-title">Classic Two-Tone Wedding Band</h3>
+                        <div class="product-rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                            <span>(312)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$1,199</span>
+                        </div>
+                        <button class="btn btn-primary btn-block add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="rings">
+                    <div class="product-image">
+                        <img src="/img/img10.jpg" alt="Rose Gold Comfort Fit Ring">
+                        <span class="product-badge">New</span>
+                        <div class="product-actions">
+                            <button class="action-btn wishlist-btn" aria-label="Add to Wishlist">
+                                <i class='bx bx-heart'></i>
+                            </button>
+                            <button class="action-btn quickview-btn" aria-label="Quick View">
+                                <i class='bx bx-show'></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Wedding Bands</span>
+                        <h3 class="product-title">Rose Gold Comfort Fit Ring</h3>
+                        <div class="product-rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bx-star'></i>
+                            <span>(85)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$950</span>
+                        </div>
+                        <button class="btn btn-primary btn-block add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="necklaces">
+                    <div class="product-image">
+                        <img src="/img/img11.jpg" alt="Petite Split Diamond Infinity Necklace in 14k Rose Gold">
+                        <span class="product-badge">New</span>
+                        <div class="product-actions">
+                            <button class="action-btn wishlist-btn" aria-label="Add to Wishlist">
+                                <i class='bx bx-heart'></i>
+                            </button>
+                            <button class="action-btn quickview-btn" aria-label="Quick View">
+                                <i class='bx bx-show'></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Wedding Bands</span>
+                        <h3 class="product-title">Petite Split Diamond Infinity Necklace in 14k Rose Gold</h3>
+                        <div class="product-rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bx-star'></i>
+                            <span>(45)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$9050</span>
+                        </div>
+                        <button class="btn btn-primary btn-block add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="necklaces">
+                    <div class="product-image">
+                        <img src="/img/img12.jpg" alt="Traditional Heavy Gold Jadau Necklace Set">
+                        <span class="product-badge exclusive">Premium</span>
+                        <div class="product-actions">
+                            <button class="action-btn wishlist-btn" aria-label="Add to Wishlist">
+                                <i class='bx bx-heart'></i>
+                            </button>
+                            <button class="action-btn quickview-btn" aria-label="Quick View">
+                                <i class='bx bx-show'></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Traditional Gold</span>
+                        <h3 class="product-title">Traditional Heavy Gold Jadau Necklace Set</h3>
+                        <div class="product-rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <span>(45)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$6,500</span>
+                        </div>
+                        <button class="btn btn-primary btn-block add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="earrings">
+                    <div class="product-image">
+                        <img src="/img/img13.jpg" alt="Rose Gold Emerald & Diamond Drop Earrings">
+                        <span class="product-badge">New</span>
+                        <div class="product-actions">
+                            <button class="action-btn wishlist-btn" aria-label="Add to Wishlist">
+                                <i class='bx bx-heart'></i>
+                            </button>
+                            <button class="action-btn quickview-btn" aria-label="Quick View">
+                                <i class='bx bx-show'></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Gemstone Earrings</span>
+                        <h3 class="product-title">Emerald & Diamond Drop Earrings</h3>
+                        <div class="product-rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                            <i class='bx bx-star'></i>
+                            <span>(68)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$1,150</span>
+                        </div>
+                        <button class="btn btn-primary btn-block add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="earrings">
+                    <div class="product-image">
+                        <img src="/img/img14.png" alt="Aurora Gemstone Huggie Hoop Earrings">
+                        <span class="product-badge">Best Seller</span>
+                        <div class="product-actions">
+                            <button class="action-btn wishlist-btn" aria-label="Add to Wishlist">
+                                <i class='bx bx-heart'></i>
+                            </button>
+                            <button class="action-btn quickview-btn" aria-label="Quick View">
+                                <i class='bx bx-show'></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Hoop Earrings</span>
+                        <h3 class="product-title">Aurora Gemstone Huggie Earrings</h3>
+                        <div class="product-rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                            <span>(312)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$450</span>
+                        </div>
+                        <button class="btn btn-primary btn-block add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="earrings">
+                    <div class="product-image">
+                        <img src="/img/img15.jpg" alt="Traditional Gold Jhumka Earrings">
+                        <span class="product-badge exclusive">Classic</span>
+                        <div class="product-actions">
+                            <button class="action-btn wishlist-btn" aria-label="Add to Wishlist">
+                                <i class='bx bx-heart'></i>
+                            </button>
+                            <button class="action-btn quickview-btn" aria-label="Quick View">
+                                <i class='bx bx-show'></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Traditional Gold</span>
+                        <h3 class="product-title">Heritage Jhumka Earrings</h3>
+                        <div class="product-rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <span>(110)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$1,550</span>
+                        </div>
+                        <button class="btn btn-primary btn-block add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bracelets">
+                    <div class="product-image">
+                        <img src="/img/img16.jpg" alt="Diamond Pave Gold Cuff Bracelet">
+                        <span class="product-badge exclusive">Designer</span>
+                        <div class="product-actions">
+                            <button class="action-btn wishlist-btn" aria-label="Add to Wishlist">
+                                <i class='bx bx-heart'></i>
+                            </button>
+                            <button class="action-btn quickview-btn" aria-label="Quick View">
+                                <i class='bx bx-show'></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Cuff Bracelets</span>
+                        <h3 class="product-title">Diamond Pave Gold Cuff Bracelet</h3>
+                        <div class="product-rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                            <i class='bx bx-star'></i>
+                            <span>(75)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$3,800</span>
+                        </div>
+                        <button class="btn btn-primary btn-block add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bracelets">
+                    <div class="product-image">
+                        <img src="/img/img17.jpg" alt="Two-Tone Beaded Gold Bracelet">
+                        <span class="product-badge">New Design</span>
+                        <div class="product-actions">
+                            <button class="action-btn wishlist-btn" aria-label="Add to Wishlist">
+                                <i class='bx bx-heart'></i>
+                            </button>
+                            <button class="action-btn quickview-btn" aria-label="Quick View">
+                                <i class='bx bx-show'></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Gold Bracelets</span>
+                        <h3 class="product-title">Two-Tone Beaded Gold Bracelet</h3>
+                        <div class="product-rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bx-star'></i>
+                            <span>(92)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$899</span>
+                        </div>
+                        <button class="btn btn-primary btn-block add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bracelets">
+                    <div class="product-image">
+                        <img src="/img/img18.jpg" alt="Grand Diamond Floral Cuff Bracelet">
+                        <span class="product-badge exclusive">Haute Joaillerie</span>
+                        <div class="product-actions">
+                            <button class="action-btn wishlist-btn" aria-label="Add to Wishlist">
+                                <i class='bx bx-heart'></i>
+                            </button>
+                            <button class="action-btn quickview-btn" aria-label="Quick View">
+                                <i class='bx bx-show'></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Diamond Collection</span>
+                        <h3 class="product-title">Grand Diamond Floral Cuff</h3>
+                        <div class="product-rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <span>(28)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$18,500</span>
+                        </div>
+                        <button class="btn btn-primary btn-block add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="/img/img7.jpg" alt="Jewelry Craftsmanship">
+                    <div class="about-badge">
+                        <span class="badge-number">20+</span>
+                        <span class="badge-text">Years of Excellence</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <span class="section-label">About Eman Jewelry</span>
+                    <h2 class="section-title">Crafting Timeless Elegance Since 2004</h2>
+                    <p>At Eman Jewelry, we believe that every piece tells a story. For over two decades, our master
+                        artisans have been creating exquisite jewelry that celebrates life's most precious moments.</p>
+                    <p>Our commitment to exceptional craftsmanship, ethically sourced materials, and timeless design has
+                        made us a trusted name in fine jewelry. Each piece is meticulously crafted with attention to
+                        detail, ensuring that your jewelry becomes a cherished heirloom for generations to come.</p>
+
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class='bx bx-check-circle'></i>
+                            <span>GIA Certified Diamonds</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class='bx bx-check-circle'></i>
+                            <span>Ethically Sourced Materials</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class='bx bx-check-circle'></i>
+                            <span>Master Craftsmen</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class='bx bx-check-circle'></i>
+                            <span>Lifetime Warranty</span>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn btn-primary">Discover Our Story</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-subtitle">Real experiences from our valued customers</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                    <p class="testimonial-text">"The engagement ring I purchased exceeded all expectations. The
+                        craftsmanship is extraordinary, and the team was incredibly helpful throughout the entire
+                        process. My fiancée absolutely loves it!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <span>New York, NY</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                    <p class="testimonial-text">"I've been a customer of Eman Jewelry for years, and they never
+                        disappoint. The quality is consistently exceptional, and their customer service is second to
+                        none. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson">
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <span>Los Angeles, CA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                    <p class="testimonial-text">"My wedding jewelry from Eman was absolutely stunning. The attention to
+                        detail and personalized service made the experience unforgettable. Thank you for making our
+                        special day even more magical!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emily Rodriguez">
+                        <div class="author-info">
+                            <h4>Emily Rodriguez</h4>
+                            <span>Miami, FL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Join Our Exclusive Newsletter</h2>
+                    <p>Be the first to know about new collections, special offers, and jewelry care tips</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="form-group">
+                        <i class='bx bx-envelope'></i>
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <a href="#" class="footer-logo">
+                        <i class='bx bx-diamond'></i>
+                        <span>Eman Jewelry</span>
+                    </a>
+                    <p>Crafting timeless elegance for over 20 years. Your trusted destination for exquisite fine
+                        jewelry.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                        <a href="#" aria-label="Pinterest"><i class='bx bxl-pinterest'></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="#">Engagement Rings</a></li>
+                        <li><a href="#">Wedding Bands</a></li>
+                        <li><a href="#">Necklaces</a></li>
+                        <li><a href="#">Earrings</a></li>
+                        <li><a href="#">Bracelets</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Jewelry Care</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class='bx bx-map'></i>
+                            <span>123 Luxury Avenue<br>New York, NY 10001</span>
+                        </li>
+                        <li>
+                            <i class='bx bx-phone'></i>
+                            <span>(555) 123-4567</span>
+                        </li>
+                        <li>
+                            <i class='bx bx-envelope'></i>
+                            <span>info@emanjewelry.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Eman Jewelry. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class='bx bx-up-arrow-alt'></i>
+    </button>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
