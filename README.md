@@ -1,6 +1,6 @@
 ## 💎 Eman Jewelry: Exquisite Fine Jewelry E-commerce Store
 
-![Uploading website img.png…]()
+![Uploading website img.png…](/assets/website img.png)
 
 ### ✨ Project Overview
 
